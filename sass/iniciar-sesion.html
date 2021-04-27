@@ -9,7 +9,7 @@
   </head>
   <body>
     <header class="header">
-      <img class="header__img" src="./img/logo-platzi-video-BW2.png" alt="" />
+      <img tabindex="0" class="header__img" src="./img/logo-platzi-video-BW2.png" alt="" />
       <div class="header__menu">
         <div class="header__menu--profile">
           <img class="icon" src="https://raw.githubusercontent.com/teffcode/Platzi-Frontend-Dev/master/assets/user-icon.png" alt="User" />
@@ -24,10 +24,10 @@
 
     <section class="login">
       <section class="login__container">
-        <h2>Inicia sesion</h2>
+        <h2 tabindex="0">Inicia sesion</h2>
         <form class="login__container--form">
-          <input type="text" class="input" placeholder="Correo" />
-          <input type="password" class="input" placeholder="Clave" />
+          <input aria-label="Correo" type="text" class="input" placeholder="Correo" />
+          <input aria-label="Clave" type="password" class="input" placeholder="Clave" />
           <button class="button">Iniciar sesion</button>
           <div class="login__container--remember-me">
             <label><input type="checkbox" id="cbox1" value="checkbox" />Recuerdame </label>

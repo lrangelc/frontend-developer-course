@@ -1,17 +1,25 @@
+$base_font_family: 'Mulish', sans-serif;
+$color_main: white;
+$background_color_main: #8f57fd;
+
 body {
   margin: 0;
-  background-color: #8f57fd;
-  font-family: 'Mulish', sans-serif;
+  background-color: $background_color_main;
+  font-family: $base_font_family;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
 }
 
 .header {
   width: 100%;
   height: 80px;
 
-  display: flex;
+  @extend .flex;
   justify-content: space-between;
   padding: 10px;
-  align-items: center;
 }
 
 .header__img {
@@ -40,7 +48,7 @@ ul:hover {
 }
 
 .header__menu li a {
-  color: white;
+  color: $color_main;
   text-decoration: none;
 }
 
@@ -77,15 +85,15 @@ details summary {
 }
 
 .main__title {
-  color: white;
+  color: $color_main;
   font-size: 25px;
 }
 
 .input {
   border: 2px solid white;
   border-radius: 25px;
-  color: white;
-  font-family: 'Mulish', sans-serif;
+  color: $color_main;
+  font-family: $base_font_family;
   font-size: 16px;
   height: 30px;
   padding: 0 20px;
@@ -95,7 +103,7 @@ details summary {
 }
 
 .input::placeholder {
-  color: white;
+  color: $color_main;
 }
 
 .login {
@@ -113,7 +121,7 @@ details summary {
   background-color: rgba(255, 255, 255, 0.1);
   border: 2px solid white;
   border-radius: 40px;
-  color: white;
+  color: $color_main;
   padding: 60px 68px 40px;
   min-height: 700px;
   width: 300px;
@@ -132,14 +140,14 @@ details summary {
 }
 
 .login__container--remember-me {
-  color: white;
+  color: $color_main;
   display: flex;
   justify-content: space-between;
   margin-top: 10px;
 }
 
 .login__container--remember-me a {
-  color: white;
+  color: $color_main;
   font-size: 14px;
   text-decoration: none;
 }
@@ -166,7 +174,7 @@ details summary {
 
 .login__container--register a {
   font-size: 16px;
-  color: white;
+  color: $color_main;
   font-weight: bold;
   text-decoration: none;
 }
@@ -182,25 +190,25 @@ details summary {
   border-top: 0px;
   border-bottom: 2px solid white;
   font-size: 16px;
-  font-family: 'Mulish', sans-serif;
+  font-family: $base_font_family;
   margin-bottom: 20px;
   padding: 20px 0;
   outline: none;
   border-radius: 0;
 }
 ::placeholder {
-  color: white;
+  color: $color_main;
 }
 
 .button {
   background-color: rgba(255, 255, 255, 0.1);
   border: none;
   border-radius: 25px;
-  color: white;
+  color: $color_main;
   cursor: pointer;
   font-size: 16px;
   font-weight: bold;
-  font-family: 'Mulish', sans-serif;
+  font-family: $base_font_family;
   height: 50px;
   margin: 10px 0;
 }
@@ -213,7 +221,7 @@ details summary {
 }
 
 .footer a {
-  color: white;
+  color: $color_main;
   cursor: pointer;
   font-size: 14px;
   padding-left: 30px;
